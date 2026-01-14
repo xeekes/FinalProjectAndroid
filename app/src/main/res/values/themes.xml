@@ -1,0 +1,55 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FinalProject" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorOnSecondary">@color/on_secondary</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/on_surface</item>
+        <item name="colorError">@color/error</item>
+        <item name="colorOnError">@color/on_error</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:navigationBarColor">@color/white</item>
+        <item name="android:statusBarColor">@color/white</item>
+    </style>
+
+    <style name="Theme.FinalProject" parent="Base.Theme.FinalProject" />
+    
+    <!-- Popup overlay theme -->
+    <style name="Theme.FinalProject.PopupOverlay" parent="ThemeOverlay.Material3.ActionBar" />
+    
+    <!-- AppBar overlay theme -->
+    <style name="Theme.FinalProject.AppBarOverlay" parent="ThemeOverlay.Material3.Dark.ActionBar" />
+    
+    <!-- Bottom Navigation Style -->
+    <style name="Widget.App.BottomNavigationView" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:background">@drawable/bottom_nav_background</item>
+        <item name="backgroundTint">@color/white</item>
+        <item name="backgroundTintMode">src_over</item>
+        <item name="itemActiveIndicatorStyle">@style/BottomNavActiveIndicator</item>
+        <item name="itemTextAppearanceActive">@style/BottomNavTextAppearanceActive</item>
+        <item name="itemTextAppearanceInactive">@style/BottomNavTextAppearanceInactive</item>
+    </style>
+    
+    <!-- Active Indicator Style - заменяет фиолетовый фон на оранжевый -->
+    <style name="BottomNavActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/orange</item>
+        <item name="android:width">48dp</item>
+        <item name="android:height">48dp</item>
+    </style>
+    
+    
+    <!-- Text appearance for active items -->
+    <style name="BottomNavTextAppearanceActive">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <!-- Text appearance for inactive items -->
+    <style name="BottomNavTextAppearanceInactive">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+</resources>
