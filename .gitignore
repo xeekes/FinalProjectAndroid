@@ -97,3 +97,6 @@ Thumbs.db
 
 # API Keys - не коммитить файлы с реальными ключами
 # Если случайно закоммитили ключ, смените его в NewsAPI и удалите из истории Git
+
+# Documentation files (keep local only)
+*.md
